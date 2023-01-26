@@ -1,0 +1,14 @@
+.dish {
+  position: relative;
+  transition: all 0.2s ease;
+  border-radius: 16px;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.2s ease;
+    box-shadow: inset 0 0 4px 1px #face8d;
+  }
+}
+
+.dishModal {
+  box-shadow: inset 0 0 4px 1px #face8d;
+}
