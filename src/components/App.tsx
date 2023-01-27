@@ -1,3 +1,4 @@
+import Booked from '@/pages/Booked/Booked';
 import Gift from '@/pages/Gift/Gift';
 import Main from '@/pages/Main/Main';
 import Menu from '@/pages/Menu/Menu';
@@ -14,6 +15,7 @@ const App: FC = () => {
         <Route path='/menu' element={<Menu />} />
         <Route path='/restaurant' element={<Restaurant />} />
         <Route path='/gift' element={<Gift />} />
+        <Route path='/booktable' element={<Booked />} />
       </Routes>
     </div>
   );

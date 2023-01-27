@@ -40,7 +40,9 @@ const Navigation: FC = () => {
         <NavLink
           className='p-[7px] sm:p-[15px] rounded-[100px] uppercase  text-sm leading-sm sm:text-sp sm:leading-sp  font-medium bg-bookedBtn text-white  hidden sm:block'
           to={'/booktable'}
-          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          style={({ isActive }) =>
+            isActive ? { backgroundColor: 'gray', color: 'black' } : undefined
+          }
         >
           Book a table
         </NavLink>
@@ -48,7 +50,9 @@ const Navigation: FC = () => {
       <NavLink
         className='max-w-[155px] w-full mx-auto flex justify-center items-center p-[7px] sm:p-[15px] rounded-[100px] text-text uppercase  text-sp leading-sp sm:text-p sm:leading-p  font-medium bg-white   mt-[10px] sm:hidden'
         to={'/booktable'}
-        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        style={({ isActive }) =>
+          isActive ? { backgroundColor: 'gray', color: 'black' } : undefined
+        }
       >
         Book a table
       </NavLink>

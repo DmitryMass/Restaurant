@@ -44,6 +44,7 @@ module.exports = {
       borderColor: {},
       colors: {
         goldPrimary: '#FACE8D',
+        goldHover: '#a27412',
         mutted: 'rgba(255, 255, 255, 0.8)',
         black: '#050505',
         error: '#d45757',

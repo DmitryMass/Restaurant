@@ -12,7 +12,6 @@ const Restaurant: FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       ref.current?.scrollIntoView({ behavior: 'smooth' });
-      console.log(1);
     }, 1000);
 
     return () => clearTimeout(timer);
