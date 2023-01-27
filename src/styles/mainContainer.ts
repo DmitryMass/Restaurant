@@ -2,7 +2,7 @@ export const mainContainer = {
   wrapper:
     'mainBgc py-[30px]  px-[10px] sm:px-[20px] file h-full  bg-center bg-no-repeat bg-cover flex flex-col justify-between items-center',
   contentWrapper:
-    'max-w-[400px] sm:max-w-[600px] w-full mx-auto grow mt-[150px] sm:mt-[100px]',
+    'max-w-[400px] sm:max-w-[600px] w-full mx-auto grow mt-[50px] sm:mt-[100px]',
   subtitle:
     'font-dancing text-goldPrimary text-h3 leading-h3 sm:text-h2 sm:leading-h2 text-center mb-[20px]',
   title:
