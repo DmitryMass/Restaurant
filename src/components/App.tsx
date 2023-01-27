@@ -2,7 +2,7 @@ import Main from '@/pages/Main/Main';
 import Menu from '@/pages/Menu/Menu';
 import { FC } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 
 const App: FC = () => {
   return (

@@ -1,15 +1,18 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { dishStyles } from '@/styles/dish';
 import { IDish } from '@/types/dish';
 import close from '@/assets/icons/close.svg';
 import '../Dish/dish.scss';
+import { Rate } from 'antd';
 
 interface IDishModalProps {
   item: IDish;
   setState: (value: boolean) => void;
 }
 
+const desc = ['Terrible', 'Bad', 'Normal', 'Good', 'Wonderful'];
 const DishModal: FC<IDishModalProps> = ({ item, setState }) => {
+  const [value, setValue] = useState(3);
   return (
     <div className={dishStyles.modalWrapper}>
       <div className={`${dishStyles.contentContainer} dishModal`}>
@@ -23,11 +26,16 @@ const DishModal: FC<IDishModalProps> = ({ item, setState }) => {
             <p className={dishStyles.modalPrice}>{item.price}</p>
           </div>
           <div className={dishStyles.modalVote}>
-            <button className={dishStyles.modalVoteBtn}>1*</button>
-            <button className={dishStyles.modalVoteBtn}>2*</button>
-            <button className={dishStyles.modalVoteBtn}>3*</button>
-            <button className={dishStyles.modalVoteBtn}>4*</button>
-            <button className={dishStyles.modalVoteBtn}>5*</button>
+            <span className='flex min-h-[61px] h-full flex-col items-center gap-[10px]'>
+              <Rate tooltips={desc} onChange={setValue} value={value} />
+              {value ? (
+                <span className='ant-rate-text block text-white text-sp leading-sp'>
+                  {desc[value - 1]}
+                </span>
+              ) : (
+                ''
+              )}
+            </span>
           </div>
         </div>
         <div

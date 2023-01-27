@@ -1,0 +1,11 @@
+.ant-float-btn-body {
+  background-color: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-1n7nwfa).ant-rate .ant-rate-star-first,
+:where(.css-dev-only-do-not-override-1n7nwfa).ant-rate .ant-rate-star-second {
+  color: white;
+
+  transition: all 0.2s;
+  user-select: none;
+}

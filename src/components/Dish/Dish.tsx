@@ -16,9 +16,9 @@ const Dish: FC<IDishProps> = ({ item }) => {
       {modal ? <DishModal item={item} setState={setModal} /> : null}
       <div
         onClick={() => setModal((prev) => !prev)}
-        className={`dish mr-[20px] ${dishStyles.wrapper}`}
+        className={`dish  ${dishStyles.wrapper}`}
       >
-        <div className='w-[90px] h-[70px]'>
+        <div className='w-[90px] h-[70px] flex justify-center items-center'>
           <img className={dishStyles.img} src={img} alt='' />
         </div>
         <div className={dishStyles.contentWrapper}>

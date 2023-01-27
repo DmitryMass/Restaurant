@@ -5,13 +5,14 @@ import menu from '../../data/menu';
 import Dish from '../Dish/Dish';
 import { IDish } from '@/types/dish';
 import useTypedSelector from '@/store/storageHooks/useTypedSelector';
+import { contentStyles } from '@/styles/contentStyles';
 
 interface IMenuTitle {
   title: string;
 }
 const MenuTitle: FC<IMenuTitle> = ({ title }) => {
   return (
-    <h2 className='font-dancing text-goldPrimary text-h3 leading-h3 mb-[20px]'>
+    <h2 className='font-dancing text-goldPrimary text-[32px] leading-[38px] sm:text-h3 sm:leading-h3 mb-[20px]'>
       {title}
     </h2>
   );
@@ -19,11 +20,10 @@ const MenuTitle: FC<IMenuTitle> = ({ title }) => {
 
 const MenuContent: FC = () => {
   const menu: any = useTypedSelector((state) => state.filterSlice.filteredMenu);
-  console.log(1);
   return (
     <>
       <FilterPanel />
-      <div className='max-w-[600px] pb-[80px] h-full overflow-auto w-full mx-auto'>
+      <div className={contentStyles.wrapper}>
         {menu.starters ? (
           <div>
             <MenuTitle title={'Starters'} />
