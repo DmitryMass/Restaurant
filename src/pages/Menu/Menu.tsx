@@ -10,7 +10,11 @@ const Menu: FC = () => {
   const ref = useRef<any>(null);
 
   useEffect(() => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
+    const timer = setTimeout(() => {
+      ref.current?.scrollIntoView({ behavior: 'smooth' });
+    }, 1000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
