@@ -1,6 +1,6 @@
 export const mainContainer = {
   wrapper:
-    'py-[30px] bg-mainBgc px-[10px] sm:px-[20px] file h-full  bg-center bg-no-repeat bg-cover flex flex-col justify-between items-center',
+    'mainBgc py-[30px]  px-[10px] sm:px-[20px] file h-full  bg-center bg-no-repeat bg-cover flex flex-col justify-between items-center',
   contentWrapper:
     'max-w-[400px] sm:max-w-[600px] w-full mx-auto grow mt-[200px] sm:mt-[100px]',
   subtitle:

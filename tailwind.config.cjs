@@ -40,10 +40,7 @@ module.exports = {
         bookedBtn: '#111111',
         activeBtn: '#F8F8F8',
       },
-      backgroundImage: {
-        mainBgc: "url('./src/assets/images/mainBgc.png')",
-        menuBgc: "url('./src/assets/images/menu.png')",
-      },
+
       borderColor: {},
       colors: {
         goldPrimary: '#FACE8D',

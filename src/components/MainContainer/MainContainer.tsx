@@ -1,7 +1,7 @@
-import { mainContainer } from '@/styles/mainContainer';
 import { FC } from 'react';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
+import './mainContainer.scss';
 
 interface IMainContainer {
   title: string;
