@@ -35,7 +35,7 @@ const Navigation: FC = () => {
           to={'/classes'}
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
-          Classes
+          Gift
         </NavLink>
         <NavLink
           className='p-[7px] sm:p-[15px] rounded-[100px] uppercase  text-sm leading-sm sm:text-sp sm:leading-sp  font-medium bg-bookedBtn text-white  hidden sm:block'

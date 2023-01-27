@@ -1,7 +1,6 @@
 import MainContainer from '@/components/MainContainer/MainContainer';
 import { mainContainer } from '@/styles/mainContainer';
 import { FC } from 'react';
-import './main.scss';
 
 const Main: FC = () => {
   return (
