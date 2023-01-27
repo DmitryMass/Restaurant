@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import photo from '@/assets/images/restaurantPhoto.png';
+import Footer from '../Footer/Footer';
 
 const RestaurantContent: FC = () => {
   return (
@@ -43,6 +44,7 @@ const RestaurantContent: FC = () => {
           consectetur lorem. Magna eget est lorem ipsum.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -32,7 +32,7 @@ const Navigation: FC = () => {
         </NavLink>
         <NavLink
           className='p-[7px] sm:p-[15px] rounded-[100px] text-text  text-sp leading-sp sm:text-p sm:leading-p  font-medium'
-          to={'/classes'}
+          to={'/gift'}
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           Gift

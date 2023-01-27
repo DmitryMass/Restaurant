@@ -6,6 +6,7 @@ import Dish from '../Dish/Dish';
 import { IDish } from '@/types/dish';
 import useTypedSelector from '@/store/storageHooks/useTypedSelector';
 import { contentStyles } from '@/styles/contentStyles';
+import Footer from '../Footer/Footer';
 
 interface IMenuTitle {
   title: string;
@@ -68,6 +69,7 @@ const MenuContent: FC = () => {
             />
           </div>
         ) : null}
+        <Footer />
       </div>
     </>
   );
