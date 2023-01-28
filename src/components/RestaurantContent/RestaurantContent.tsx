@@ -1,15 +1,14 @@
 import { FC } from 'react';
 import photo from '@/assets/images/restaurantPhoto.png';
 import Footer from '../Footer/Footer';
+import { restaurantStyles } from '@/styles/restaurantStyles';
 
 const RestaurantContent: FC = () => {
   return (
-    <div className='max-w-[600px] w-full mx-auto py-[30px]  h-[100%] overflow-auto'>
+    <div className={restaurantStyles.restContentContainer}>
       <div>
-        <h4 className='text-white text-h4 leading-h4 mb-[10px]'>
-          Lorem ipsum dolor
-        </h4>
-        <p className='text-mutted text-sp leading-sp opacity-70 mb-[20px]'>
+        <h4 className={restaurantStyles.restTitle}>Lorem ipsum dolor</h4>
+        <p className={restaurantStyles.restSubtitle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer
           malesuada nunc vel risus commodo viverra maecenas. Dis parturient
@@ -23,10 +22,8 @@ const RestaurantContent: FC = () => {
         <img src={photo} alt='' />
       </div>
       <div>
-        <h4 className='text-white text-h4 leading-h4 mb-[10px]'>
-          Lorem ipsum dolor
-        </h4>
-        <p className='text-mutted text-sp leading-sp opacity-70 pb-[20px]'>
+        <h4 className={restaurantStyles.restTitle}>Lorem ipsum dolor</h4>
+        <p className={restaurantStyles.restSubtitle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer
           malesuada nunc vel risus commodo viverra maecenas. Dis parturient

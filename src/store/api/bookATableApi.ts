@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const URL = 'http://localhost:5005';
+const URL = 'https://restaurant-nique-server.onrender.com';
 
 export const bookATableApi = createApi({
   reducerPath: 'bookATableApi',
