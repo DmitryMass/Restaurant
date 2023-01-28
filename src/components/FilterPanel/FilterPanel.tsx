@@ -13,40 +13,40 @@ const FilterPanel: FC = () => {
       <button
         onClick={() => dispatch(filterMenu('All'))}
         className={`${
-          menu.all ? 'text-goldPrimary' : null
-        } text-p leading-p px-[20px] py-[10px] text-white`}
+          menu.all ? 'text-goldPrimary' : 'text-white'
+        } text-p leading-p px-[20px] py-[10px] `}
       >
         All
       </button>
       <button
         onClick={() => dispatch(filterMenu('starters'))}
         className={`${
-          menu.starters ? 'text-goldPrimary' : null
-        } text-p leading-p px-[20px] py-[10px] text-white`}
+          menu.starters ? 'text-goldPrimary' : 'text-white'
+        } text-p leading-p px-[20px] py-[10px] `}
       >
         Starters
       </button>
       <button
         onClick={() => dispatch(filterMenu('breakfast'))}
         className={`${
-          menu.breakfast ? 'text-goldPrimary' : null
-        } text-p leading-p px-[20px] py-[10px] text-white`}
+          menu.breakfast ? 'text-goldPrimary' : 'text-white'
+        } text-p leading-p px-[20px] py-[10px] `}
       >
         Breakfast
       </button>
       <button
         onClick={() => dispatch(filterMenu('dinner'))}
         className={`${
-          menu.dinner ? 'text-goldPrimary' : null
-        } text-p leading-p px-[20px] py-[10px] text-white`}
+          menu.dinner ? 'text-goldPrimary' : 'text-white'
+        } text-p leading-p px-[20px] py-[10px`}
       >
         Dinner
       </button>
       <button
         onClick={() => dispatch(filterMenu('drinks'))}
         className={`${
-          menu.drinks ? 'text-goldPrimary' : null
-        } text-p leading-p px-[20px] text-white`}
+          menu.drinks ? 'text-goldPrimary' : 'text-white'
+        } text-p leading-p px-[20px] `}
       >
         Drinks
       </button>

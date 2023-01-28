@@ -5,4 +5,5 @@ export const formStyles = {
   input: ' mb-[30px] mt-[10px] p-[15px]   ',
   btnSubmit:
     'w-full bg-goldPrimary text-sp uppercase leading-sp rounded-[16px] py-[10px] hover:bg-goldHover transition-all duration-100 ',
+  errorSpan: 'text-red text-sm leading-sm mb-[5px] ml-[10px] text-goldPrimary',
 };

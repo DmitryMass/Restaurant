@@ -5,5 +5,5 @@ export const footerStyles = {
   developed: 'text-mutted opacity-80 text-sp leading-sp',
   contentContainer: 'flex flex-col items-start',
   title: 'text-h5 leading-h5 text-white mb-[10px]',
-  link: 'text-mutted opacity-60 text-p leading-p tracking-[1px]',
+  link: 'text-mutted opacity-60 text-p leading-p tracking-[1px] transition-all duration-100 hover:text-white hover:opacity-80',
 };
